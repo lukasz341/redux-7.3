@@ -1,0 +1,14 @@
+{
+  "name": "projekt7.3",
+  "version": "1.0.0",
+  "description": "akcje",
+  "main": "actions.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "lukasz",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.1.0"
+  }
+}
