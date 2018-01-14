@@ -29,26 +29,24 @@ function removeComment(id){
     }
 }
 
-function opinionComment(id, text){
-    if (text='up')
-    {
+function ThubmUpComment(id){
         return {
             type: THUMB_UP_COMMENT,
-            id,
-            comment_image: 'lapka w górę'
+            id      
         }
     }
 
-    if (text='down'){
+    function ThubmDownComment(id){
         return {
-            type: THUMB_DOWN_COMMENT,
-            id,
-            comment_image: 'lapka w dół'
+            type: THUMB_DOWn_COMMENT,
+            id      
         }
     }
-}
+
+
 
 dispatch(addComment('nowy komentarz!'));
 dispatch(editComment('20','wyedytowany komentarz!'));
 dispatch(removeComment('20'));
-dispatch(opinionComment('20', 'up'));
+dispatch(ThumbUpComment('20'));
+dispatch(ThumbDownComment('20'));
